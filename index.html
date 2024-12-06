@@ -11,7 +11,51 @@
         }
 
         .search-container {
+            background-color: #7ae7ab;
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 900;
+            flex-grow: 1;
+            max-height: 80vh;
+            overflow-y: auto
             margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0f0f18;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #09080c;
+            margin-bottom: 20px;
+        }
+
+         /* Tombol YouTube */
+         .youtube-button {
+            background-color: #530cd6;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 12px 15px;
+            border-radius: 20px;
+            text-align: center;
+            border: none;
+            text-transform: uppercase;
+            flex: 1;
+        }
+
+        .youtube-button:hover {
+            background-color: #a37207;
         }
 
         input[type="text"] {
@@ -95,6 +139,8 @@
 <body>
 
     <div class="search-container">
+        <h1>welcome</h1>
+        <h2>untuk cek area akrab</h2>
         <input type="text" id="searchInput" onkeyup="searchTable()"
             placeholder="Tulis nama kota/kabupaten untuk mengetahui zona area">
     </div>
@@ -508,6 +554,8 @@
             </tr>
         </tbody>
     </table>
+    <button class="youtube-button" onclick="window.open('https://www.youtube.com/@robych522', '_blank');">youtube</button>
+    <button class="youtube-button" onclick="window.open('https://robych.roby.biz.id', '_blank');">WEB TEMBAK PAKET</button>
     <script>
         var modal = document.getElementById("myModal");
         var span = document.getElementsByClassName("close")[0];
